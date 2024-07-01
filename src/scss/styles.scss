@@ -18,6 +18,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.navbar-toggler {
+  border: none;
+
+  &:focus {
+    box-shadow: unset;
+  }
+}
+
 footer {
   a {
     text-decoration: none;
