@@ -41,7 +41,8 @@ body {
   object-fit: cover;
 }
 
-a {
+main a,
+footer a {
   text-decoration: none;
 
   &:hover {
