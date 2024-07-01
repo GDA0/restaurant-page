@@ -7,6 +7,7 @@ import * as bootstrap from 'bootstrap'
 // Import modules
 import loadHomePage from '../modules/home-page'
 import loadMenuPage from '../modules/menu-page'
+import loadAboutPage from '../modules/about-page'
 
 document.addEventListener('DOMContentLoaded', () => {
   loadHomePage()
@@ -21,5 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   menuBtn.addEventListener('click', () => {
     loadMenuPage()
+  })
+
+  aboutBtn.addEventListener('click', () => {
+    loadAboutPage()
   })
 })
