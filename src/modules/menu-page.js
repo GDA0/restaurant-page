@@ -82,7 +82,7 @@ export default function loadMenuPage () {
     cardBody.appendChild(cardTitle)
 
     const cardText = document.createElement('p')
-    cardText.classList.add('card-text')
+    cardText.classList.add('card-text', 'fw-bold', 'fst-italic')
     cardText.textContent = `Price: ${food.price}`
     cardBody.appendChild(cardText)
 
