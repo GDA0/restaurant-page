@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const homeBtn = document.querySelector('#homeBtn')
   const menuBtn = document.querySelector('#menuBtn')
   const aboutBtn = document.querySelector('#aboutBtn')
+  const navLinks = document.querySelectorAll('.nav-link')
 
   homeBtn.addEventListener('click', () => {
     loadHomePage()
@@ -26,5 +27,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   aboutBtn.addEventListener('click', () => {
     loadAboutPage()
+  })
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      const offcanvas = bootstrap.Offcanvas.getInstance(
+        document.querySelector('#offcanvasNavbar')
+      )
+      if (offcanvas) {
+        offcanvas.hide()
+      }
+    })
   })
 })
