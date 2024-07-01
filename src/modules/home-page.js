@@ -1,4 +1,4 @@
-import homePageImage from '../assets/images/home-page-image.jpg'
+import homePageImage from '../assets/dev-images/home-page-image.jpg'
 
 export default function loadHomePage () {
   const content = document.querySelector('#content')
